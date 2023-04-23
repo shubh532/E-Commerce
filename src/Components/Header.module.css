@@ -1,0 +1,44 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 2px solid;
+  background-color: rgb(79, 79, 79);
+}
+.list {
+  display: flex;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 200;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  border-bottom: 0.1rem solid white;
+  position: fixed;
+  top: 0%;
+  background: black;
+  width: 100%;
+  /* z-index: 1; */
+  color: white;
+  margin: 0;
+}
+.list li {
+  margin: 0px 40px;
+}
+.CartBtn {
+  position: absolute;
+  right: 5rem;
+  width: 4rem;
+  padding: 4px;
+  font-size: large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Header h1 {
+  padding: 5rem;
+  font-size: 5rem;
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 0;
+}
