@@ -12,7 +12,7 @@ export default function CartItem(props) {
       </div>
       <span>{props.price} Rs</span>
       <div className={Style.QtyInp}>
-        <input value={props.Qty} type="number" min="1" max="15"></input>
+        <input defaultValue={props.quantity} type="number" min="1" max="15"></input>
         <button className={Style.removeBtn}>Remove</button>
       </div>
     </div>

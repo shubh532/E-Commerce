@@ -7,7 +7,7 @@
     border: 2px solid;
     display: flex;
     flex-direction: column;
-    width: 43rem;
+    width: 40rem;
     background-color: aliceblue;
     z-index: 2;
 }
@@ -64,7 +64,7 @@
     font-size:x-large;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
-    left: 28rem;
+    left: 25rem;
     width: 12rem;
     display: flex;
     justify-content: space-evenly;
