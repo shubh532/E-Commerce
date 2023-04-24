@@ -1,0 +1,78 @@
+.CartContainer{
+    padding: 0.5rem 0.5rem 3rem 0.5rem ;
+    overflow: scroll;
+    position: fixed;
+    top: 3.2rem;
+    right: 0;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    width: 43rem;
+    background-color: aliceblue;
+    z-index: 2;
+}
+.SubHeading{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.CartContainer .removeBtn{
+    width: 2rem;
+    text-align: center;
+    font-size: larger;
+    padding: 2px;
+    border-radius: 4px;
+    margin: 1rem;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+}
+/* .SubHeading h3{
+    border-radius: 2px solid;
+    /* margin-bottom: 0.3rem; */
+.Price,.Item,.Quantity{
+    padding-bottom: 12px;
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+.Item{
+    width: 40%;
+
+}
+.Quantity{
+    width: 30%;
+}
+.Price{
+    width: 20%;
+}
+.purchaseBtn{
+    width: 10rem;
+    font-size: larger;
+    color: aliceblue;
+    background-color: cornflowerblue;
+    padding: 8px;
+    border: 0px;
+    border-radius: 8px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Total{
+    margin: 0.8rem;
+    font-size:x-large;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 28rem;
+    width: 12rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.Total p{
+    margin: 0;
+}
+.Total span{
+ font-weight: bold;
+}
