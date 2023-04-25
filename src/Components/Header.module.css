@@ -27,6 +27,10 @@
 .list li {
   margin: 0px 40px;
 }
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
 .CartBtn {
   position: absolute;
   right: 5rem;
@@ -36,10 +40,28 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .Header h1 {
-  padding: 5rem;
+  padding: 1rem;
   font-size: 5rem;
   color: aliceblue;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  margin: 0;
+  margin: 4rem 0rem 0rem 0rem;
+}
+
+.subheading{
+  color:white;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.PlayBtn{
+  width: 5%;
+  font-size: 2rem;
+  margin: 1rem auto;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1.5rem;
+  border: 2px solid black;
 }

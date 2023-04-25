@@ -1,0 +1,39 @@
+.MusicContainer {
+  width: 70%;
+  margin: auto;
+}
+.musicHeading{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.musicData{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: 2px solid;
+}
+.ticketBtn{
+    padding: 5px 10px;
+    font-size:large;
+    background-color: rgb(8, 140, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    border: 0px;
+    border-radius: 8px;
+}
+
+.Date{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align:center;
+    width: 5rem;
+}
+
+span{
+    font-family: 'Times New Roman', Times, serif;
+    width: 16rem;
+    text-align: center;
+}

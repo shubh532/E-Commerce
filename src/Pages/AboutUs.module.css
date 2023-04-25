@@ -1,0 +1,26 @@
+.AboutUsContainer{
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.AboutUsContainer img{
+    margin: 0px 23%;
+    width: 36rem;
+    height:23rem;
+}
+
+.Heading{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+.parahead{
+    font-size:x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.paragraph{
+    font-size: large;
+    text-indent: 10%;
+    text-align: center;
+}
