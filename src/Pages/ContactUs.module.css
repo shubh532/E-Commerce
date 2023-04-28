@@ -1,0 +1,51 @@
+.form {
+    width: 20%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 2px #888888;
+    border-color: rgb(169, 169, 169);
+}
+
+.inputContainer {
+    margin: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer input {
+    margin: 5px;
+    font-size: large;
+    border-radius: 6px;
+    border: 2px solid rgb(171, 168, 168);
+    padding: 5px 10px;
+}
+
+.inputContainer label {
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form button {
+    width: 40%;
+    font-size: medium;
+    background-color: rgb(8, 140, 255);
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+    color: aliceblue;
+    margin: 0.8rem auto;
+}
+.form button:hover{
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px #888888;
+}
+
+.inputContainer input:hover{
+    box-shadow: 0px 0px 5px 2px #888888;
+    border: 0px;
+}

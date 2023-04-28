@@ -1,5 +1,5 @@
 .MusicContainer {
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 .musicHeading{
@@ -32,8 +32,8 @@
     width: 5rem;
 }
 
-span{
+.musicData span{
     font-family: 'Times New Roman', Times, serif;
-    width: 16rem;
+    width: 10rem;
     text-align: center;
 }

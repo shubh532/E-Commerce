@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet,useOutlet } from "react-router-dom";
 import Footer from "./Components/Footer";
 import CartContainer from "./CartComponents/CartContainer";
 import CtxProvider from "./ContextAPI/CtxProvider";
-import HomePage from "./Pages/Home";
-import Music from "./Pages/Music";
+
 
 function App() {
   const [ShowCart, UnShowcart] = useState(false);
@@ -15,12 +14,11 @@ function App() {
   function UnShowCartBtn() {
     UnShowcart(false);
   }
-
+ const outlet=useOutlet()
   return (
     <CtxProvider>
-      <Outlet />
+      <Outlet outlet={outlet} ShowCartBtn={ShowCartBtn}/>
       {ShowCart && <CartContainer UnShowCartBtn={UnShowCartBtn} />}
-      <Outlet />
       <Footer ShowCartBtn={ShowCartBtn}></Footer>
     </CtxProvider>
   );
