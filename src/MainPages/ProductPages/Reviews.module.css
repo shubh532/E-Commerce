@@ -1,0 +1,40 @@
+.ReviewsContainer{
+    border-bottom: 2px solid rgb(181, 181, 181);
+    border-top: 2px solid rgb(181, 181, 181);
+    width: 100%;
+    padding: 1rem;
+}
+.ReviewsHead{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.ReviewsHead h2{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.rating{
+    display: flex;
+    align-items: center;
+    margin: 0rem 2rem;
+    height: 100%;
+}
+.rating div{
+    font-size: 22px;
+}
+.userreviews{
+    margin: 0rem 1rem;
+    border-bottom: 2px solid rgb(161, 161, 161);
+}
+.userreviews div{
+    display: flex;
+    margin: 1rem 0rem;
+}
+.userreviews h4{
+    margin: 0.5rem 0rem;
+}
+.userreviews img{
+    width: 100px;
+    height: 100px;
+}

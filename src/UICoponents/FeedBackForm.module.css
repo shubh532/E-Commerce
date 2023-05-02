@@ -1,0 +1,76 @@
+.formContainer{
+    border: 2px solid rgb(164, 164, 164);
+    width: 50%;
+    padding:10px;
+    margin: 1rem auto;
+}
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.formContainer h2{
+    margin: 0.5rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0.6rem 1rem;
+}
+.DateCity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.6rem 1rem;
+}
+.DateCity div{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.inputContainer label, .DateCity label, .inputPics label {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+.inputContainer input ,.DateCity input{
+    font-size: medium;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 1px solid;
+}
+.inputContainer textarea{
+    padding: 10px;
+    height: 8rem;
+    font-size: larger;
+    border-radius: 12px;
+}
+.inputPics{
+    margin: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputPics input{
+    width: 12rem;
+    font-size: 0.9rem;
+}
+
+.formContainer button{
+    width: 6rem;
+    margin: 1.5rem auto;
+    padding: 5px 3px;
+    font-size: medium;
+    background-color:rgb(0, 149, 255);
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+
+}
+.inputPics input:hover,.inputContainer input:hover ,.DateCity input:hover,.inputContainer textarea:hover{
+    background-color: rgb(238, 241, 241);
+    box-shadow:0px 0px 5px 3px rgb(193, 193, 193);
+}

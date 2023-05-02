@@ -1,0 +1,28 @@
+.Container{
+    width: 85rem;
+    margin: auto;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* .ImgInfoContainer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} */
+.ProductImges{
+    width: 42%;
+    height: 100vh;
+    position:sticky;
+    top: 0px;
+    bottom: 0px;
+
+}
+.ProductInfo{
+    margin-left: 1rem;
+
+}

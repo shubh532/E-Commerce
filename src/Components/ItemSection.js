@@ -20,7 +20,7 @@ export default function Section(props){
         ></img>
       </div>
       <div className={style.PriceBtn}>
-        <span>${props.price}</span>
+        <span>&#8377;{props.price}</span>
         <button onClick={AddItemToCart.bind(null,Item)}>Add To Cart</button>
       </div>
     </div>

@@ -9,3 +9,12 @@ h1 {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+.Productlink{
+  color: black;
+  padding: 10px;
+  margin: 0;
+  width:auto;
+  margin-top:2.5rem ;
+  border: 2px solid black;
+}

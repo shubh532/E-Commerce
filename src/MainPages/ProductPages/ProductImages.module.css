@@ -1,0 +1,55 @@
+.MainConatiner{
+    width: 100%;
+    margin: 0.5rem 0;
+    /* position:-webkit-sticky; */
+    position: static;
+   
+
+}
+.imgsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.reviewImgContainer img{
+    display:block;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 8px;
+}
+.MainImg{
+    width: 28rem;
+    height: 37rem;
+    display: flex;
+    align-items: center;
+}
+.MainImg img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+.buttons{
+    width: 100%;
+    display: inline-flex;
+}
+.buttons button{
+    font-size: 1.5rem;
+    padding: 5px 8px;
+    margin: 0.7rem 1rem;
+    width: 50%;
+    border: 0px;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.button1{
+    background-color: rgb(8, 140, 255);
+}
+.button2{
+    background-color: rgb(73, 109, 238);
+}
+.buttons button:hover{
+    box-shadow: 0px 0px 5px 2px rgb(181, 181, 181);
+    cursor:pointer;
+}

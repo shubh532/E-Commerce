@@ -1,0 +1,113 @@
+.InfoContainer{
+    margin: 1rem;
+}
+.priceInfo{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.priceInfo .SellingPrice{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.priceInfo .MRPprice{
+    color: rgb(0, 134, 25);
+    text-decoration: line-through;
+}
+
+.priceInfo .priceOff{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+.rating{
+    margin: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+}
+ .ReviewCount{
+    font-style: italic;
+    padding: 1px 10px;
+}
+
+.rating .Assurance{
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.SizeData{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 2rem 0.5rem 0.5rem 0.5rem;
+    height: 4rem;
+
+
+}
+/* .SizeData span{
+    font-size: 1.2rem;
+    color: rgb(94, 94, 94);
+} */
+
+.SizeData ul{
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px 25px; 
+    width: 15rem;
+    height: 2.2rem;
+}
+
+.SizeData ul li{
+    margin:0px 5px;
+    padding: 5px;
+    width: 1.5rem;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+}
+.SizeChart{
+    display: flex;
+    align-items: center;
+}
+.SizeChart img{
+    width: 33px;
+    height: 33px;
+    margin: 3px;
+}
+.SizeData ul li:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 3px rgb(0, 0, 0);
+    background-color: rgb(84, 84, 84);
+    font-size: larger;
+}
+.SizeChart img:hover{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.offersClass{
+margin:0px ;
+padding: 5px 1rem;
+}
+
+.offersClass p img{
+    width:22px;
+    height: 22px;
+}
+.offersClass p {
+    display:flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.offersClass p span{
+    color: rgb(0, 113, 251);
+    font-weight: bold;
+    margin: 0px 4px;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ContextAPI from "./CreateContext";
+import ProductsProider from "./ProvideProducts";
 
 function CtxProvider(props) {
   const [CartItem, AddCartItems] = useState([]);
@@ -20,12 +21,13 @@ function CtxProvider(props) {
   const DefaultValues = {
     Items: CartItem,
     AddToCart: AddToCart,
-    mess: "helo",
   };
 
   return (
     <ContextAPI.Provider value={DefaultValues}>
-      {props.children}
+      <ProductsProider>
+        {props.children}
+      </ProductsProider>
     </ContextAPI.Provider>
   );
 }
