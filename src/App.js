@@ -1,19 +1,22 @@
 import { Route, Switch } from "react-router-dom"
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import Footer from "./Components/Footer";
 import CartContainer from "./CartComponents/CartContainer";
 import CtxProvider from "./ContextAPI/CtxProvider";
-import HomePage from "./Pages/Home";
+import HomePage from "./MainPages/Home";
 import ProductGallary from "./Components/ProductsGallary"
 import Header from "./Components/Header";
-import Music from "./Pages/Music";
-import AboutUs from "./Pages/AboutUs"
+import Music from "./MainPages/Music";
+import AboutUs from "./MainPages/AboutUs";
 import ProductDetails from "./MainPages/ProductPages/ProductDetails"
-import ContactUs from "./Pages/ContactUs";
-
+import ContactUs from "./MainPages/ContactUs";
+import LogInPage from "./UICoponents/Login";
+import TokenAPI from "./ContextAPI/TokenAPI";
 
 function App() {
   const [ShowCart, UnShowcart] = useState(false);
+
+  const Token=useContext(TokenAPI)
 
   function ShowCartBtn() {
     UnShowcart(true);
@@ -22,13 +25,12 @@ function App() {
     UnShowcart(false);
   }
   return (
-
     <CtxProvider>
       <Switch>
-        <Route path="/"exact>
+        <Route path="/" exact>
           <HomePage ShowCartBtn={ShowCartBtn}></HomePage>
           {ShowCart && <CartContainer UnShowCartBtn={UnShowCartBtn} />}
-          <Music />
+          <Music/>
         </Route>
         <Route path="/products" >
           <Header ShowCartBtn={ShowCartBtn} />
@@ -43,13 +45,20 @@ function App() {
         <Route path="/contactus" >
           <Header ShowCartBtn={ShowCartBtn} />
           {ShowCart && <CartContainer UnShowCartBtn={UnShowCartBtn} />}
-          <ContactUs/>
+          <ContactUs />
         </Route>
         <Route path="/productgallary/:productId" >
           <Header ShowCartBtn={ShowCartBtn} />
           {ShowCart && <CartContainer UnShowCartBtn={UnShowCartBtn} />}
-          <ProductDetails/>
+          <ProductDetails />
         </Route>
+        <Route path="/login">
+          <Header ShowCartBtn={ShowCartBtn} />
+          {ShowCart && <CartContainer UnShowCartBtn={UnShowCartBtn} />}
+          <LogInPage />
+        </Route>
+
+
       </Switch>
 
       <Footer ShowCartBtn={ShowCartBtn}></Footer>
