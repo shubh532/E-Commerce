@@ -5,7 +5,9 @@ import Section from "./ItemSection"
 import { useContext } from "react";
 import ProductContextAPI from "../ContextAPI/ProductContext";
 export default function ProductsGallary() {
-  const Products=useContext(ProductContextAPI)
+  const Products = useContext(ProductContextAPI)
+
+
   return (
     <React.Fragment>
       <h1>MUSIC</h1>
@@ -21,7 +23,6 @@ export default function ProductsGallary() {
                 img={item.imageUrl}
               ></Section>
             </Link>
-
           );
         })}
       </div>

@@ -2,11 +2,16 @@ import Youtube from "../Media/youtube-96.png";
 import instagram from "../Media/instagram-94.png";
 import twitter from "../Media/twitter-96.png";
 import style from "./Fotter.module.css"
+import { useContext } from "react";
+import TokenAPI from "../ContextAPI/TokenAPI";
 
 export default function Footer(props) {
+
+  const Token=useContext(TokenAPI)
+
   return (
     <footer className={style.Footer}>
-      <button onClick={props.ShowCartBtn}>Go To Cart</button>
+      {Token.isLogin&&<button onClick={props.ShowCartBtn}>Go To Cart</button>}
       <div className={style.footerItem}>
         <h1>The Generic</h1>
         <div className={style.socialLinkCont}>

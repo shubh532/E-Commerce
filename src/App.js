@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom"
+import { Redirect, Route, Switch } from "react-router-dom"
 import React, { useState,useContext } from "react";
 import Footer from "./Components/Footer";
 import CartContainer from "./CartComponents/CartContainer";
@@ -50,12 +50,16 @@ function App() {
         <Route path="/productgallary/:productId" >
           <Header ShowCartBtn={ShowCartBtn} />
           {ShowCart && <CartContainer UnShowCartBtn={UnShowCartBtn} />}
-          <ProductDetails />
+          {Token.isLogin&&<ProductDetails />}
+          {!Token.isLogin&&<Redirect to="/login"/>}
         </Route>
         <Route path="/login">
           <Header ShowCartBtn={ShowCartBtn} />
           {ShowCart && <CartContainer UnShowCartBtn={UnShowCartBtn} />}
           <LogInPage />
+        </Route>
+        <Route path="*">
+          <Redirect to="/login"/>
         </Route>
 
 

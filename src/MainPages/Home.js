@@ -7,11 +7,11 @@ import TokenAPI from "../ContextAPI/TokenAPI";
 
 function HomePage(props) {
   const Ctx = useContext(ContextAPI);
-  
-  const tokenAPI=useContext(TokenAPI)
 
-  const history =useHistory()
-  function LogOutHandler(){
+  const tokenAPI = useContext(TokenAPI)
+
+  const history = useHistory()
+  function LogOutHandler() {
     tokenAPI.LogOut()
     history.replace("/login")
   }
@@ -25,19 +25,17 @@ function HomePage(props) {
     <React.Fragment>
       <header className={Style.Header}>
         <ul className={Style.list}>
-          {tokenAPI.isLogin && <li><Link to="/">Home</Link></li>}
+          <li><Link to="/">Home</Link></li>
 
-          {tokenAPI.isLogin && <li ><Link to="/products">Store</Link></li>}
+          <li ><Link to="/products">Store</Link></li>
+          <li><Link to="/aboutus">About Us</Link></li>
 
-          {tokenAPI.isLogin && <li><Link to="/aboutus">About Us</Link></li>}
+          <li><Link to="/contactus">Contact Us</Link></li>
 
-          {tokenAPI.isLogin && <li><Link to="/contactus">Contact Us</Link></li>}
-
-          {tokenAPI.isLogin && <button onClick={LogOutHandler}>LogOut</button>}
+          {tokenAPI.isLogin && <button className={Style.LogoutBtn} onClick={LogOutHandler}>LogOut</button>}
 
           {!tokenAPI.isLogin && <li> <Link to="/login">Login</Link></li>}
-
-          {tokenAPI.isLogin&&<button onClick={props.ShowCartBtn} className={Style.CartBtn}>
+          {tokenAPI.isLogin && <button onClick={props.ShowCartBtn} className={Style.CartBtn}>
             Cart {TotalQauntity}
           </button>}
         </ul>
