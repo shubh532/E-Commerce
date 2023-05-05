@@ -10,10 +10,10 @@ function Header(props) {
   const history = useHistory()
   function LogOutHandler() {
     tokenAPI.LogOut()
+    localStorage.removeItem("Email")
     history.replace("/login")
   }
 
-  console.log(tokenAPI.isLogin)
   let TotalQauntity = 0;
   Ctx.Items.forEach((item) => {
     TotalQauntity = item.quantity + TotalQauntity;

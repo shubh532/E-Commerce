@@ -13,6 +13,7 @@ function HomePage(props) {
   const history = useHistory()
   function LogOutHandler() {
     tokenAPI.LogOut()
+    localStorage.removeItem("Email")
     history.replace("/login")
   }
 

@@ -5,13 +5,13 @@ import { useContext } from "react";
 export default function CartContainer(props) {
   const CartItems=useContext(ContextAPI)
 
-  const TotalAmount = CartItems.Items.reduce((Total, item) => {
+  const TotalAmount = CartItems.Items.reduce((Total, item) =>{
     return Total + item.price * item.quantity;
   },0);
 
 
   const item=CartItems.Items.map((item)=>{
-    return<CartItem key={item.id} title={item.title} price={item.price} img={item.img} quantity={item.quantity}></CartItem>
+    return<CartItem key={item.id} id={item._id} title={item.title} price={item.price} img={item.img} quantity={item.quantity}></CartItem>
   })
   return (
     <div className={style.CartContainer}>

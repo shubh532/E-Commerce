@@ -2,9 +2,13 @@ import style from "./Section.module.css"
 import { useContext } from "react";
 import ContextAPI from "../ContextAPI/CreateContext";
 
+
 export default function Section(props){
   const itemctx=useContext(ContextAPI)
+
+  // console.log(UserEmail.Email)
   const Item={...props}
+  console.log(Item)
   const AddItemToCart=(item)=>{
     itemctx.AddToCart(item)
   }

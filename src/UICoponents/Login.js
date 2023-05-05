@@ -60,6 +60,7 @@ export default function LogInPage() {
 
       if(Response.ok){
         const SuccessResponse=await Response.json()
+        localStorage.setItem("Email",SuccessResponse.email)
         Token.LogIn(SuccessResponse.idToken)
         history.replace("/products")
         SetLoding(false)

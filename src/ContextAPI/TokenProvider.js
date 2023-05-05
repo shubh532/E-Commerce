@@ -18,6 +18,7 @@ function TokenProvider(props){
     const DefaultValues={
         tokenId:tokenId,
         isLogin:isLogin,
+        Email:null,
         LogIn:LogIn,
         LogOut:LogOut,
         mess:"Hi.."
