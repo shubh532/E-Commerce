@@ -12,7 +12,7 @@ function CtxProvider(props) {
   
   useEffect(() => {
     async function fetchCartData (){
-      const Response = await fetch(`https://crudcrud.com/api/0349ab2192d24984b0b99ee77e625ba7/${email}`)
+      const Response = await fetch(`https://crudcrud.com/api/8cc949f802f1460ea9dafb7634a652f6/${email}`)
       const CartData = await Response.json()
       AddCartItems([...CartData])
     }
@@ -40,7 +40,7 @@ function CtxProvider(props) {
         const ID = CartItem[ExistItem]._id
         delete item._id
 
-        const response = await fetch(`https://crudcrud.com/api/0349ab2192d24984b0b99ee77e625ba7/${email}/${ID}`, {
+        const response = await fetch(`https://crudcrud.com/api/8cc949f802f1460ea9dafb7634a652f6/${email}/${ID}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json"
@@ -57,7 +57,7 @@ function CtxProvider(props) {
         console.log(error)
       }
     } else {
-      const response = await fetch(`https://crudcrud.com/api/0349ab2192d24984b0b99ee77e625ba7/${email}`, {
+      const response = await fetch(`https://crudcrud.com/api/8cc949f802f1460ea9dafb7634a652f6/${email}`, {
         method: "POST",
         body: JSON.stringify(product),
         headers: { "Content-Type": "application/json" }
@@ -71,7 +71,7 @@ function CtxProvider(props) {
   };
 
   const RemoveCartData = async (id) => {
-    const Response = await fetch(`https://crudcrud.com/api/0349ab2192d24984b0b99ee77e625ba7/${email}/${id}`, {
+    const Response = await fetch(`https://crudcrud.com/api/8cc949f802f1460ea9dafb7634a652f6/${email}/${id}`, {
       method: "DELETE"
     })
     const Items = CartItem.filter(item => item._id !== id)
